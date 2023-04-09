@@ -1,0 +1,53 @@
+:root {
+    --blue:rgb(53, 117, 255);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #7dcfff7c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+header a {
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
+button:hover {
+    cursor: grab;
+}
