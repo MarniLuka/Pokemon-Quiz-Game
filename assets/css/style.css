@@ -1,0 +1,66 @@
+:root {
+    --blue:rgb(53, 117, 255);
+    --red: rgba(228, 55, 55, 0.795);
+    --yellow: #ffde24; 
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #7dcfff7c;
+}
+
+header a {
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0 0 0;
+    margin: 5px;
+    font-size: 50px;
+    color: var(--red);
+}
+
+img {
+    display: flex;
+    width: 18%;
+}
+
+p {
+    font-size: 30px;
+    padding: 0 300px;
+    margin: 10px;
+    color: rgb(59, 161, 68);
+}
+
+button {
+    background-color: var(--blue);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 40px;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+button:hover {
+    cursor: grab;
+}
