@@ -8,12 +8,34 @@
 </head>
 <body>
     <main>
-        <h2>High Scores</h2>
-    
-        <button>
-            <a href="/index.html">Go Back</a>
-        </button>
-        <button>Clear High Scores</button>
+        <header>
+            <h2>High Scores</h2>
+        </header>
+
+        <section id="board">
+            <div id="name"></div>
+            <div id="scores"></div>
+        </section>
+
+        <section>
+            <button>
+                <a href="/index.html">Go Back</a>
+            </button>
+            <button id="clear">Clear High Scores</button>
+        </section>
     </main>
+
+    <!-- Shows the scores saved in local storage -->
+    <script>
+        var name = localStorage.getItem('name')
+        var score = localStorage.getItem('score')
+        document.getElementById('scores').innerHTML = score
+        document.getElementById('name').innerHTML = name
+    // Deletes scores saved in local storage
+        document.getElementById('clear').onclick = function() {
+        localStorage.clear(name);
+        localStorage.clear(score);
+        }
+    </script>
 </body>
 </html>

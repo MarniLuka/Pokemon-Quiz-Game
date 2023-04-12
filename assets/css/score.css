@@ -1,3 +1,10 @@
+:root {
+    --blue:rgb(53, 117, 255);
+    --red: rgba(228, 55, 55, 0.795);
+    --yellow: #ffde24; 
+    --green: rgb(59, 161, 68);
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -11,21 +18,48 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: inline-block;
+    flex-direction: column;
 }
+
+header {
+    font-size: 35px;
+    color: var(--green);
+    margin: 40px 0 0 10px;
+}
+
+#board {
+    font-size: 35px;
+    display: flex;
+    display: inline-flex;
+}
+
+#scores {
+    color: var(--red);
+    margin: 0 20px;
+}
+
+#name {
+    color: var(--blue);
+    margin: 0 20px;
+}
+
 
 button {
     background-color: var(--blue);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    border-radius: 20px;
-    padding: 10px 25px;
+    border-radius: 15px;
+    padding: 10px 15px;
     margin: 40px;
 }
 
 button a {
     text-decoration: none;
+    color: var(--yellow);
+}
+
+button {
     color: var(--yellow);
 }
 

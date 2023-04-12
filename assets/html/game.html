@@ -12,13 +12,29 @@
         <h1 id="timer"></h1>
     </header>
     <main>
-        <p> 
-            Who's that Pokémon?  
-            <!-- picture of the pokemon -->
-            <!-- <div id="question" aria-role="img" aria-label="carousel"></div> -->
-        </p>
+        <div id="container">
+            <p id="quizTitle"> 
+                Who's that Pokémon?  
+                <!-- picture of the pokemon -->
+                <div id="question"></div>
+            </p>
 
+            <ul id="choices"></ul>
+            <div id="check"></div>
+        </div>
+
+        <div id="final" style="display:none">
+            <h2>Finished!</h2>
+            <h2>Your final score is:</h2>
+            <h3 id="score"></h3>
+            <div id="save">
+                <label>Name:</label>
+                <input placeholder="Please Enter Here" id="name"/>
+                <button id="submitBtn"><a href="/assets/html/score.html">Submit</a></button>
+            </div>
+        </div>
     </main>
+
     <script src="/assets/js/script.js"></script>
 
 </body>
