@@ -77,7 +77,7 @@ var quizArr = [
 var index = 0;
 var score = [""];
 
-// When clicking any answer, it goes to the next one.
+// This goes through the array of objects with the questions and choices shown. When clicking any answer, it goes to the next one.
 function showQuiz () {
 
     if(index < quizArr.length) {
@@ -99,13 +99,14 @@ function showQuiz () {
 
 }
 
-// When clicking the right answer, displays 'Correct'
-// When clicking the wrong answer, displays 'Wrong!', and subtracts 10 seconds from the timer
 document.getElementById('choices').onclick = function(e) {
-
+    
+// When clicking the right answer, displays 'Correct'
     if(e.target.innerText == quizArr[index].answer) {
         document.getElementById('check').innerHTML =
         `<h3>Correct</h3>`;
+
+// When clicking the wrong answer, displays 'Wrong!', and subtracts 10 seconds from the timer
     } else {
         document.getElementById('check').innerHTML =
         `<h3>Wrong</h3>`;
